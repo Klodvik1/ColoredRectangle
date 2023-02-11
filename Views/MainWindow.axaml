@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ColoredRectangle.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+		Height="300" Width="300"
+        x:Class="ColoredRectangle.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ColoredRectangle">
+	<Grid ColumnDefinitions="1*, 2*" RowDefinitions="Auto, Auto">
+		<StackPanel Grid.Column="0">
+			<Button Name="buttonKhaki" Content="Khaki" Command="{Binding ButtonClick}" CommandParameter="Khaki" Width="100" Background="Khaki"/>
+			<Button Name="buttonRed" Content="Red" Command="{Binding ButtonClick}" CommandParameter="Red" Width="100" Background="Red"/>
+			<Button Name="buttonMediumVioletRed" Content="MediumVioletRed" Command="{Binding ButtonClick}" CommandParameter="MediumVioletRed" Width="100" Background="MediumVioletRed"/>
+			<Button Name="buttonBisque" Content="Bisque" Command="{Binding ButtonClick}" CommandParameter="Bisque" Width="100" Background="Bisque"/>
+			<Button Name="buttonLemonChiffon" Content="LemonChiffon" Command="{Binding ButtonClick}" CommandParameter="LemonChiffon" Width="100" Background="LemonChiffon"/>
+			<Button Name="buttonPowderBlue" Content="PowderBlue" Command="{Binding ButtonClick}" CommandParameter="PowderBlue" Width="100" Background="PowderBlue"/>
+			<Button Name="buttonMintCream" Content="MintCream" Command="{Binding ButtonClick}" CommandParameter="MintCream" Width="100" Background="MintCream"/>
+			<Button Name="buttonMaroon" Content="Maroon" Command="{Binding ButtonClick}" CommandParameter="Maroon" Width="100" Background="Maroon"/>
+			<Button Name="buttonRosyBrown" Content="RosyBrown" Command="{Binding ButtonClick}" CommandParameter="RosyBrown" Width="100" Background="RosyBrown"/>
+			<Button Name="buttonLightPink" Content="LightPink" Command="{Binding ButtonClick}" CommandParameter="LightPink" Width="100" Background="LightPink"/>
+		</StackPanel>
+		<Rectangle Fill="{Binding RectangleColor}" Grid.Column="1" Height="300"/>
+	</Grid>
+</Window>
